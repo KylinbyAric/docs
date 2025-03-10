@@ -9,6 +9,24 @@ more + 空格
 ps -ef |grep 6379   
 
 
+## less 
+单独页面滚动式查看日志
+
+-N 显示行号
+
+操作命令：
+行号+G 跳到指定行
+
+/+关键词
+
+
+## mvn 
+查看依赖树
+mvn dependency:tree | grep "summer-cloud-db" -a10
+
+
+
+
 原理篇
 
 
