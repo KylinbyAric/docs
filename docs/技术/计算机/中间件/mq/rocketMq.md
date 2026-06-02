@@ -24,7 +24,7 @@ MQ
 
 
 原理篇
-![三次握手](../img/rocket_mq_full.png)
+![三次握手](../../img/rocket_mq_full.png)
 
 
 消息怎么发送、怎么存储、怎么消费？
@@ -82,7 +82,7 @@ consumer max offset 最大拉取offset
 串行化性能很差
 
 事务消息：
-![三次握手](../img/rocket_mq_transaction_mq.png)
+![三次握手](../../img/rocket_mq_transaction_mq.png)
 
 目标是保证生产端能执行完本地事务之后，broker再向消费端投递消息。
 ￼
@@ -217,7 +217,7 @@ producer.send(msg, new SendCallback() {
  }
 });
 OneWay：单向发送，不管回应，不管回调，只管发送。
-![三次握手](../img/rocket_mq_send_full.png)
+![三次握手](../../img/rocket_mq_send_full.png)
 
 ￼
 

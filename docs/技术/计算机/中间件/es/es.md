@@ -30,7 +30,7 @@ postinglist是指文档id、次数等信息
 关键字term合起来就是一个Term Dictionary。存储结构是有序二叉排序树--存疑，为什么不是多叉。
 ##Term index
 Term Dictionary过大导致内存放不下，那就建立一个字典树，通过字典树快速找到term。term index不需要存储所有term，只需要存储前缀和term block即可
-![三次握手](../img/es_term_index.png)
+![三次握手](../../img/es_term_index.png)
 ##mapping
 一个mapping由一个或多个analyzer组成， 一个analyzer又由一个或多个filter组成的。
 在存储内容时，是会先用mapping进行处理，把内容解析分割成各个索引字符，然后存储起来。

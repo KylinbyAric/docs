@@ -109,8 +109,8 @@ innodb的事务原理：
 涉及参数：
 innodb_flush_log_at_trx_commit：redolog的刷盘策略 0是mysql线程每秒刷盘 1是每次都提交都刷盘 2是写入OS cache OS进程每秒刷盘 建议为2或1
 sync_binlog：bin log的刷盘策略 0是写入操作系统缓存，让操作系统决定什么时候刷盘  n 每n次提交后直接刷盘。 建议为1
-￼![三次握手](../img/mysql_query_full.png)
-￼![三次握手](../img/mysql_two_commit.png)
+￼![三次握手](../../img/mysql_query_full.png)
+￼![三次握手](../../img/mysql_two_commit.png)
 
 
 ￼
